@@ -10,5 +10,7 @@ public class ProducerConsumerExampleWithWaitAndNotify
       Thread tConsumer = new Thread(new Consumer(taskQueue), "Withdraw");
       tProducer.start();
       tConsumer.start();
+      Thread t3 = new Thread(new Producer(taskQueue,MAX_CAPACITY));
+      t3.start();
    }
 }
