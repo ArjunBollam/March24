@@ -43,7 +43,7 @@ public void produce(int i) throws InterruptedException
          taskQueue.wait();
        }
          
-       Thread.sleep(1000);
+       Thread.sleep(100);
        taskQueue.add(i);
        
        for(int j :taskQueue)
