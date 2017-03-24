@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Calci {
 	int a;
 	int b;
-	int ans=1;
+	//int ans=1;
 	void power(int a,int b) throws NegativeException{
 		if (a<0 || b<0) {
 			throw new NegativeException("a and b should be non-negative");
