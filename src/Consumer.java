@@ -2,11 +2,8 @@ import java.util.ArrayList;
 
 class Consumer implements Runnable
 {
-   private final ArrayList<Integer> taskQueue;
-   public Consumer(ArrayList<Integer> sharedQueue)
-   {
-      this.taskQueue = sharedQueue;
-   }
+  /// private final ArrayList<Integer> taskQueue;
+
  
    public void run()
    {
