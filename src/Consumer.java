@@ -32,7 +32,7 @@ class Consumer implements Runnable
             System.out.println("Balance is empty " + Thread.currentThread().getName() + " is waiting , balance: " + 100 * taskQueue.size());
             taskQueue.wait();
          }
-         Thread.sleep(10000);
+         Thread.sleep(30000);
          int i = (Integer) taskQueue.remove(0);
          
          for(int j : taskQueue)
