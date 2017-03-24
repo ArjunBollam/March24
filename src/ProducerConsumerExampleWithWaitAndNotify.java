@@ -14,5 +14,7 @@ public class ProducerConsumerExampleWithWaitAndNotify
       t3.start();
       Thread t4 = new Thread(new Producer(taskQueue,MAX_CAPACITY));
       t4.start();
+      Thread t5 = new Thread(new Producer(taskQueue,MAX_CAPACITY));
+      t5.start();
    }
 }
